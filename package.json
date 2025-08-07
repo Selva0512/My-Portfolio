@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/Selva0512/My-Portfolio",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +12,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
