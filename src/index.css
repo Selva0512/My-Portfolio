@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+.nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-left {
+  animation: fadeInLeft 3s ease forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-right {
+  animation: fadeInRight 3s ease forwards;
+}
+
+
+.Name {
+  position: relative;
+  font-size: 3rem; /* default for large screens */
+  --clr: #F6D55C;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 80px;
+  cursor: pointer;
+}
+.text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+.hover-text {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  color: var(--clr);
+  overflow: hidden;
+  border-right: 6px solid var(--clr);
+  animation: animateHoverText 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 40px var(--clr));
+}
+/* Animate from 0% to 100% width */
+@keyframes animateHoverText {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* ↓↓↓ Responsive adjustment for small screens ↓↓↓ */
+@media (max-width: 640px) {
+  .Name {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+    line-height: 50px;
+  }
+
+  .hover-text {
+    border-right: 3px solid var(--clr);
+  }
+}
+
+
+
+.bg-image {
+  background-image: url('./asset/rm183-techi-02.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* or whatever height you want */
+}
+
+
+.educate {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+.educate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background-color: white;
+  animation: underlineLoop 2s ease-in-out infinite;
+  transform-origin: left;
+}
+/* Keyframes for looping underline */
+@keyframes underlineLoop {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
