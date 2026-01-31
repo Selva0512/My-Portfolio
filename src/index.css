@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 .nav {
   display: none;
@@ -35,6 +36,16 @@
 }
 .fade-in-right {
   animation: fadeInRight 3s ease forwards;
+}
+
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
 }
 
 
