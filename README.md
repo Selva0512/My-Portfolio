@@ -1,4 +1,5 @@
-# This is my first personal design portfolio, built to showcase my work, skills, and creative approach. The project is developed using React and Vite, focusing on performance, simplicity, and a clean user experience.
+# My Portfolio
+This is my first personal design portfolio, built to showcase my work, skills, and creative approach. The project is developed using React and Vite, focusing on performance, simplicity, and a clean user experience.
 
 The portfolio serves as both a learning project and a foundation I plan to expand as I grow as a designer and front-end developer.
 
